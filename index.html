@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue-ydui Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/ydui.rem.css">
+    
+    <!--引入自定义样式-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!-- 引入rem自适应类库 -->
+    <script src="js/ydui.flexible.js"></script>
+</head>
+<body>
+<div id="app">
+	<yd-slider autoplay="3000">
+        <yd-slider-item>
+            <a href="http://www.ydcss.com">
+                <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+            </a>
+        </yd-slider-item>
+        <yd-slider-item>
+            <a href="http://www.ydcss.com">
+                <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+            </a>
+        </yd-slider-item>
+        <yd-slider-item>
+            <a href="http://www.ydcss.com">
+                <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+            </a>
+        </yd-slider-item>
+    </yd-slider>
+    <yd-rollnotice autoplay="2000"direction="down"height="40"speed="300000">
+    	
+        <yd-rollnotice-item>
+        	<span class="icon" style="background: url(img/index_icon_notice.png) center center no-repeat;background-size: contain;margin: 10px;"></span><span>社区动态</span>1荣耀V9 3月超级钜惠！
+       		
+        </yd-rollnotice-item>
+        <yd-rollnotice-item>
+        	<span class="icon" style="background: url(img/index_icon_notice.png) center center no-repeat;background-size: contain;margin: 10px;"></span><span>社区动态</span>2荣耀V9 3月超级钜惠！
+       	</yd-rollnotice-item>
+    </yd-rollnotice>
+    <div class="meanu">
+    	<yd-grids-group :rows="4" class="col1" >
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu1.png">
+	            <span slot="text">身份识别</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu2.png">
+	            <span slot="text">缴费服务</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu3.png">
+	            <span slot="text">报事报修</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu4.png">
+	            <span slot="text">访客通行</span>
+	        </yd-grids-item>
+	    </yd-grids-group>
+	    <yd-grids-group :rows="4" class="col2">
+	        <yd-grids-item type="a" link="http://www.baidu.com">
+	            <img slot="icon" src="img/index_menu5.png">
+	            <span slot="text">社区动态</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu6.png">
+	            <span slot="text">便民服务</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu7.png">
+	            <span slot="text">收费标准</span>
+	        </yd-grids-item>
+	        <yd-grids-item  type="a">
+	            <img slot="icon" src="img/index_menu8.png">
+	            <span slot="text">意见反馈</span>
+	        </yd-grids-item>
+	    </yd-grids-group>
+    </div>
+    <div class="">
+    	<img src=""/>
+    </div>
+	
+    
+</div>
+<!-- 引入 Vue -->
+<script src="js/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="js/ydui.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+        	data1:'Click Me!'
+        },
+        methods: {
+           
+        }
+        
+    })
+</script>
+</body>
+</html>
